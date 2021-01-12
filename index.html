@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-		<title>Personal Portfolio Website</title>
+		<!-- Website Title -->
+		<title>WEcoders - Personal Portfolio Website</title>
 
 		<!-- font awesome -->
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
@@ -12,6 +15,42 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!-- Default Color -->
 		<link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+		<!-- style switcher - for demo purpose only -->
+		<link
+			rel="stylesheet"
+			href="css/skins/color-1.css"
+			class="alternate-style"
+			title="color-1"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/skins/color-2.css"
+			class="alternate-style"
+			title="color-2"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="css/skins/color-3.css"
+			class="alternate-style"
+			title="color-3"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="css/skins/color-4.css"
+			class="alternate-style"
+			title="color-4"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="css/skins/color-5.css"
+			class="alternate-style"
+			title="color-5"
+			disabled
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
 	</head>
 	<body>
 		<!-- Header Start -->
@@ -19,7 +58,7 @@
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="logo">
-						<a href="index.html">T</a>
+						<a href="index.html">w</a>
 					</div>
 					<div class="hamburger-btn outer-shadow hover-inner-shadow">
 						<span></span>
@@ -34,29 +73,50 @@
 			<div class="close-nav-menu outer-shadow hover-inner-shadow">&times;</div>
 			<div class="nav-menu-inner">
 				<ul>
-					<li><a href="#" class="inner-shadow active">home</a></li>
-					<li><a href="#" class="outer-shadow hover-inner-shadow">about</a></li>
 					<li>
-						<a href="#" class="outer-shadow hover-inner-shadow">services</a>
+						<a href="#home" class="link-item inner-shadow active">home</a>
 					</li>
 					<li>
-						<a href="#" class="outer-shadow hover-inner-shadow">Portfolio</a>
+						<a href="#about" class="link-item outer-shadow hover-inner-shadow"
+							>about</a
+						>
 					</li>
 					<li>
-						<a href="#" class="outer-shadow hover-inner-shadow">testimonial</a>
+						<a
+							href="#services"
+							class="link-item outer-shadow hover-inner-shadow"
+							>services</a
+						>
 					</li>
 					<li>
-						<a href="#" class="outer-shadow hover-inner-shadow">Contact</a>
+						<a
+							href="#portfolio"
+							class="link-item outer-shadow hover-inner-shadow"
+							>Portfolio</a
+						>
+					</li>
+					<li>
+						<a
+							href="#testimonial"
+							class="link-item outer-shadow hover-inner-shadow"
+							>testimonial</a
+						>
+					</li>
+					<li>
+						<a href="#contact" class="link-item outer-shadow hover-inner-shadow"
+							>Contact</a
+						>
 					</li>
 				</ul>
 			</div>
 			<!-- Copyright Text -->
 			<p class="copyright-text">&copy; 2021 WEcoders</p>
 		</nav>
+		<div class="fade-out-effect"></div>
 		<!-- Navigation Menu End -->
 
 		<!-- Home Section Star -->
-		<section class="home-section section">
+		<section class="home-section section active" id="home">
 			<!-- Effect Wrap Start -->
 			<div class="effect-wrap">
 				<div class="effect effect-1"></div>
@@ -88,9 +148,12 @@
 				<div class="row full-screen align-items-center">
 					<div class="home-text">
 						<p>hello</p>
-						<h2>I'm Tanvir</h2>
+						<h2>I'm WEcoders</h2>
 						<h1>Web Designer & Developer</h1>
-						<a href="#" class="btn-1 outer-shadow hover-inner-shadow">
+						<a
+							href="#about"
+							class="link-item btn-1 outer-shadow hover-inner-shadow"
+						>
 							more about me
 						</a>
 					</div>
@@ -109,7 +172,7 @@
 		<!-- Home Section End -->
 
 		<!-- About Section Start -->
-		<section class="about-section section">
+		<section class="about-section section" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -158,7 +221,10 @@
 						<a href="cv.pdf" class="btn-1 outer-shadow hover-inner-shadow">
 							download CV
 						</a>
-						<a href="#" class="btn-1 outer-shadow hover-inner-shadow">
+						<a
+							href="#contact"
+							class="link-item btn-1 outer-shadow hover-inner-shadow"
+						>
 							hire me
 						</a>
 					</div>
@@ -361,7 +427,7 @@
 		<!-- About Section End -->
 
 		<!-- Service Section Start -->
-		<section class="service-section section">
+		<section class="service-section section" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -465,7 +531,7 @@
 		<!-- Service Section End -->
 
 		<!-- Portfolio Section Start -->
-		<section class="portfolio-section section">
+		<section class="portfolio-section section" id="portfolio">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -874,7 +940,7 @@
 		<!-- Portfolio Section End -->
 
 		<!-- Testimonial Section Start -->
-		<section class="testimonial-section section">
+		<section class="testimonial-section section" id="testimonial">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -944,7 +1010,7 @@
 		<!-- Testimonial Section End -->
 
 		<!-- Contact Section Start -->
-		<section class="contact-section section">
+		<section class="contact-section section" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -1045,7 +1111,7 @@
 						</p>
 					</div>
 					<div class="pp-project-details">
-						<div class="row">
+						<!-- <div class="row">
 							<div class="description">
 								<h3>project brief:</h3>
 								<p>
@@ -1068,7 +1134,7 @@
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1097,6 +1163,28 @@
 			</div>
 		</div>
 		<!-- Portfolio Popup End -->
+
+		<!-- Style Switcher Start - for Demo puropse only -->
+		<div class="style-switcher outer-shadow">
+			<div
+				class="style-switcher-toggler s-icon outer-shadow hover-inner-shadow"
+			>
+				<i class="fas fa-cog fa-spin"></i>
+			</div>
+			<div class="day-night s-icon outer-shadow hover-inner-shadow">
+				<i class="fas"></i>
+			</div>
+
+			<h4>theme colors</h4>
+			<div class="colors">
+				<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+				<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+				<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+				<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+				<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+			</div>
+		</div>
+		<!-- Style Switcher End -->
 
 		<!-- main js -->
 		<script src="js/main.js"></script>
